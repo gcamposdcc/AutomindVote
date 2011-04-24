@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="0,1,2,3,4,5"
+    >
+
+
+<TableRow>
+	<TextView
+		android:text="Escribe tu RUT sin puntos ni guión" 
+		android:hint="Tu RUT"
+		android:id="@+id/RunInputTitle" 
+		android:onClick="cleanTextField"
+		android:layout_span="6"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+	</TextView>
+</TableRow>
+<TableRow>
+	<EditText 
+		android:text="" 
+		android:id="@+id/RutInputTextField" 
+		android:layout_span="6"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+	</EditText>
+</TableRow>
+<TableRow>
+	<TextView
+		android:text="Escribe el código" 
+		android:id="@+id/CodeInputTitle" 
+		android:onClick="cleanTextField"
+		android:layout_span="6"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+	</TextView>
+</TableRow>
+<TableRow>
+	<EditText 
+		android:text="0" android:id="@+id/CodeInput00" 
+		android:inputType="number" android:numeric="integer" android:maxLength="1"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+	</EditText>
+	<EditText 
+		android:text="0" android:id="@+id/CodeInput01" 
+		android:inputType="number" android:numeric="integer" android:maxLength="1"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+	</EditText>
+	<EditText 
+		android:text="0" android:id="@+id/CodeInput02" 
+		android:inputType="number" android:numeric="integer" android:maxLength="1"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+	</EditText>
+	<EditText 
+		android:text="0" android:id="@+id/CodeInput03" 
+		android:inputType="number" android:numeric="integer" android:maxLength="1"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+	</EditText>
+	<EditText 
+		android:text="0" android:id="@+id/CodeInput04" 
+		android:inputType="number" android:numeric="integer" android:maxLength="1"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+	</EditText>
+	<EditText 
+		android:text="0" android:id="@+id/CodeInput05"
+		android:inputType="number" android:numeric="integer" android:maxLength="1"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+	</EditText>
+</TableRow>
+<TableRow>
+	<Button 
+		android:text="Aceptar" 
+		android:id="@+id/RunInputButton" 
+		android:layout_span="6"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:onClick="actionButton">
+	</Button>
+</TableRow>
+
+<TableRow>
+	<TextView
+		android:text="" 
+		android:id="@+id/RunInputFeedback" 
+		android:layout_span="6"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+	</TextView>
+</TableRow>
+</TableLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="0,1"
+    >
+
+<TableRow >
+<Button android:id="@+id/click0"
+		android:onClick="voteButton"
+		android:layout_height="60px"
+		android:textSize="24px"
+		android:text="A" />
+<Button android:id="@+id/click1"
+		android:onClick="voteButton"
+		android:layout_height="60px"
+		android:textSize="24px"
+		android:text="B" />
+</TableRow>
+<TableRow>
+<Button android:id="@+id/click2"
+		android:onClick="voteButton"
+		android:layout_height="60px"
+		android:textSize="24px"
+		android:text="C" />
+<Button android:id="@+id/click3"
+		android:onClick="voteButton"
+		android:layout_height="60px"
+		android:textSize="24px"
+		android:text="D" />
+</TableRow>
+<TableRow>
+<Button android:id="@+id/click4"
+		android:onClick="voteButton"
+		android:layout_height="60px"
+		android:textSize="24px"
+		android:text="E" />
+<Button android:id="@+id/click5"
+		android:onClick="voteButton"
+		android:textSize="24px"
+		android:layout_height="60px"
+		android:text="F" />
+</TableRow>
+<TableRow>
+	<TextView
+		android:text="Código" 
+		android:editable="false"
+		android:id="@+id/KeyCode" 
+		android:layout_span="2"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+	</TextView>
+</TableRow>
+</TableLayout>
